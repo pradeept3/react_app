@@ -3,13 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppOneInstagram , {facebook,whatsapp,myName,mySchoolName} from './AppOne';
+
 
 // const root = ReactDOM.createRoot(<h1>Hello World!!!</h1>,document.getElementById('root'));
 ReactDOM.render(
   <>
     <h1>Hello World!!</h1>
     <input type='text' name='FirstName' contenteditable='' dir='ltr'/><br/><br/>
-    <App />
+    {/* <App /> */}
+    <ol>
+      <li>{AppOneInstagram}</li>
+      <li>{facebook}</li>
+      <li>{whatsapp}</li>
+      <li>{myName()}</li>
+      <li>{mySchoolName()}</li>
+    </ol>
     </>
   ,document.getElementById('root')
 );
